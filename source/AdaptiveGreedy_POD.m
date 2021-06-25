@@ -26,10 +26,8 @@ lower = -0.08;                                  % Lower bound of r given by eq. 
 upper = 0.08;
 %% Model Parameters
 sigma = 0.006;
-% a1 = xlsread('DD_1FHWModel_10000.xlsx');
-% a = a1(:,[1 4:13]);
-a1 = xlsread('DD_10000.xlsx');
-a = a1;
+a1 = xlsread('DD_1FHWModel_10000.xlsx');
+a = a1(:,[1 4:13]);
 b = 0.015;
 %% time step
 dt =20/360;
