@@ -30,8 +30,8 @@ xlabel('Number of iterations','fontsize',14,'interpreter','latex');
 
 ylabel('Residual','fontsize',14,'interpreter','latex');
 
-% print(gcf,'MaxAvrgErrorVsIter.png','-dpng','-r600');
-% saveas(gcf,'MaxAvrgErrorVsIter','epsc');
+print(gcf,'MaxAvrgErrorVsIter.png','-dpng','-r600');
+saveas(gcf,'MaxAvrgErrorVsIter','epsc');
 
 %% 
 Fig2 = figure(2)
@@ -49,11 +49,12 @@ set(gca,'FontSize',12)
 legend({'$\epsilon_{\mathrm{POD}}$'},'Interpreter','latex','Location','NorthEast','fontsize',16)
 xlabel('Number of POD modes','fontsize',16,'interpreter','latex');
 ylabel('Projection Error, $\epsilon_{\mathrm{POD}}$','fontsize',16,'interpreter','latex');
-% print(gcf,'ProjectionError.png','-dpng','-r600');
-% saveas(gcf,'ProjectionError','epsc');
+
+print(gcf,'ProjectionError.png','-dpng','-r600');
+saveas(gcf,'ProjectionError','epsc');
 
 
-%%
+%% Error Model
 %%
 Fig4 = figure(4)
 subplot(2,2,1)
@@ -112,7 +113,7 @@ xlabel('Error estimator $\varepsilon$','fontsize',10,'interpreter','latex');
 ylabel('Error','fontsize',10,'interpreter','latex');
 title('(d) Iteration no. 8.','fontsize',10,'interpreter','latex');
 
-% saveas(gcf,'ErrorModelTogether','epsc');
+saveas(gcf,'ErrorModelTogether','epsc');
 
 
 end
