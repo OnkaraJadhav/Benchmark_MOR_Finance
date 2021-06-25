@@ -22,7 +22,7 @@ ylabel('Simulated yield curves','fontsize',18,'interpreter','latex');
 grid on
 toc
 
-% print(gcf,'MaxAvrgErrorVsIter.png','-dpng','-r600');
-% saveas(gcf,'MaxAvrgErrorVsIter','epsc');
+print(gcf,'MaxAvrgErrorVsIter.png','-dpng','-r600');
+saveas(gcf,'MaxAvrgErrorVsIter','epsc');
 
 end
